@@ -67,15 +67,11 @@ PORT = 12345
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((HOST, PORT))
 server_socket.listen()
-print("aaa")
 print(f"Server listening on {HOST}:{PORT}")
 # args=list(directory.split("`"))
 Scanner = threading.Thread(target=start)
-print("oo")
 Scanner.start()
-print("hmm")
 while True:
-    print("yo")
     client_socket, addr = server_socket.accept()
     print(f"Connection from {addr}")
 
