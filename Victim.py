@@ -6,7 +6,7 @@ import time
 import pathlib
 import threading
 global directory
-directory = "C:"
+directory = "D:\\Downloads"
 def start():
     while(1):
         ScanDirectory(directory)
