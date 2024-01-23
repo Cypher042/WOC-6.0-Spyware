@@ -6,7 +6,7 @@ import time
 import pathlib
 import threading
 global directory
-directory = "D:\\Malware Test"
+directory = "C:"
 def start():
     while(1):
         ScanDirectory(directory)
